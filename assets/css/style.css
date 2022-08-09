@@ -329,4 +329,7 @@ footer .container {
     height: 50px;
     font-size: 13px;
   }
+  .local--map-image {
+    background-position: -300px;
+  }
 }
