@@ -34,6 +34,8 @@ body {
   margin: 0 auto;
 }
 
+/* Header */
+
 header {
   width: 100%;
   height: 65px;
@@ -52,16 +54,6 @@ header .container {
   padding-bottom: 15px;
 }
 
-main {
-  background-color: #0b090a;
-}
-
-main .container {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 80px;
-}
-
 .btn {
   display: block;
   padding: 8px 12px;
@@ -75,8 +67,22 @@ main .container {
 .schedule img {
   display: none;
 }
+
 .schedule:hover {
   background-color: #ba181b;
+}
+
+/* Main */
+
+
+main {
+  background-color: #0b090a;
+}
+
+main .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
 }
 
 .text-area {
@@ -126,7 +132,9 @@ main .container {
   height: 100%;
 }
 
-.default-sec {
+/* Services Section */
+
+.services {
   background-color: #d6d4e2;
 }
 
@@ -182,6 +190,7 @@ main .container {
   width: 100%;
   padding: 32px;
 }
+
 .item--text div {
   margin-bottom: 8px;
   display: flex;
@@ -210,6 +219,8 @@ main .container {
   font-size: 15px;
 }
 
+/* Local Section */
+
 .local {
   background-color: #f5f3f4;
 }
@@ -228,6 +239,8 @@ main .container {
   left: 0;
   right: 0;
 }
+
+/* Footer */
 
 footer {
   background-color: #161a1d;
@@ -250,6 +263,7 @@ footer .container {
 .footer--text img {
   width: 200px;
 }
+
 .footer--social-media a {
   text-decoration: none;
   color: inherit;
@@ -262,6 +276,7 @@ footer .container {
   .text-area h1 {
     font-size: 40px;
   }
+
   .default-sec--text h2 {
     font-size: 35px;
   }
@@ -275,23 +290,27 @@ footer .container {
     padding: 25px;
     padding-bottom: 0;
   }
-  .text-area h1 {
-    font-size: 35px;
-  }
-  .default-sec--text h2 {
-    font-size: 32px;
-  }
+
   main .container {
     flex-direction: column;
     align-items: center;
   }
-  .image-area {
-    width: 100%;
-    justify-content: center;
+  .text-area h1 {
+    font-size: 35px;
   }
   .whatsapp {
     width: 100%;
   }
+
+  .default-sec--text h2 {
+    font-size: 32px;
+  }
+
+  .image-area {
+    width: 100%;
+    justify-content: center;
+  }
+
   .footer--text img {
     width: 150px;
   }
@@ -301,13 +320,6 @@ footer .container {
 }
 
 @media (max-width: 480px) {
-  footer .container {
-    flex-direction: column;
-    gap: 20px;
-  }
-  .footer--text img {
-    width: 100px;
-  }
   .schedule span {
     display: none;
   }
@@ -324,12 +336,22 @@ footer .container {
     align-items: center;
     background-color: #59ce72;
   }
+
   .default-sec--item strong {
     width: 50px;
     height: 50px;
     font-size: 13px;
   }
+
   .local--map-image {
     background-position: -300px;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer--text img {
+    width: 100px;
   }
 }
