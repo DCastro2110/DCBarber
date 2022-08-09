@@ -108,7 +108,7 @@ main .container {
   justify-content: center;
   gap: 10px;
   background-color: #ba181b;
-  transition: opacity 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out;
 }
 
 .whatsapp:hover {
