@@ -220,7 +220,7 @@ main .container {
 }
 
 .local--map-image {
-  background: url("../svg/map.svg");
+  background: url("../svg/map.png");
   background-size: cover;
   background-position: center;
   height: 350px;
