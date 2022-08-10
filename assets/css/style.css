@@ -5,7 +5,8 @@ html {
   --main-dark-color: #0b090a;
   --light-dark-color: #161a1d;
   --light-grey-color: #f5f3f4;
-  --main-red-color: #ba181b;
+  --main-golden-color: #c59505;
+  --hover-golden-color: #735703;
 
   /*  Font-size Vars */
   --xs: 16px;
@@ -29,11 +30,11 @@ html {
 body {
   background-color: var(--main-dark-color);
   scrollbar-width: thin;
-  scrollbar-color: #d6d4e2 var(--main-red-color);
+  scrollbar-color: #d6d4e2 var(--main-golden-color);
 }
 
 *::selection {
-  background-color: var(--main-red-color);
+  background-color: var(--main-golden-color);
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +44,7 @@ body {
   background: var(--main-dark-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--main-red-color);
+  background: var(--main-golden-color);
   border-radius: 10px;
 }
 
@@ -76,11 +77,11 @@ header .container {
 .btn {
   display: block;
   padding: 8px 12px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 300ms ease-in-out;
+  transition: border 300ms ease-in-out;
 }
 
 .schedule img {
@@ -88,7 +89,7 @@ header .container {
 }
 
 .schedule:hover {
-  background-color: var(--main-red-color);
+  border-color: var(--main-golden-color);
 }
 
 /* Main */
@@ -131,12 +132,12 @@ main .container {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: var(--main-red-color);
+  background-color: var(--main-golden-color);
   transition: background-color 300ms ease-in-out;
 }
 
 .whatsapp:hover {
-  background-color: #941b1d;
+  background-color: var(--hover-golden-color);
 }
 
 .image-area {
@@ -165,10 +166,13 @@ main .container {
 }
 
 .default-sec--text span {
-  color: #e5383b;
+  color: #d69509;
   text-transform: uppercase;
   font-size: var(--sm);
   font-weight: bold;
+}
+
+.default-sec--text span::selection {
 }
 
 .default-sec--text h2 {
@@ -216,7 +220,7 @@ main .container {
 }
 
 .default-sec--item strong {
-  background-color: var(--main-red-color);
+  background-color: var(--main-golden-color);
   height: 64px;
   width: 64px;
   padding: 8px;
