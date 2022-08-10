@@ -1,30 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+html {
+  /* Colors Vars */
+  --main-dark-color: #0b090a;
+  --light-dark-color: #161a1d;
+  --light-grey-color: #f5f3f4;
+  --main-red-color: #ba181b;
+
+  /*  Font-size Vars */
+  --xs: 16px;
+  --sm: 20px;
+  --md: 24px;
+  --lg: 28px;
+  --xl: 32px;
+  --2xl: 36px;
+  --3xl: 40px;
+  --4xl: 56px;
+  --5xl: 64px;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "epilogue";
+  font-family: "Manrope", sans-serif;
 }
 
 body {
-  background-color: #0b090a;
+  background-color: var(--main-dark-color);
   scrollbar-width: thin;
-  scrollbar-color: #d6d4e2 #ba181b;
+  scrollbar-color: #d6d4e2 var(--main-red-color);
 }
 
 *::selection {
-  background-color: #ba181b;
+  background-color: var(--main-red-color);
 }
 
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #d6d4e2;
+  background: var(--main-dark-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: #ba181b;
+  background: var(--main-red-color);
   border-radius: 10px;
 }
 
@@ -39,7 +58,7 @@ body {
 header {
   width: 100%;
   height: 65px;
-  background: #0b090a;
+  background: var(--main-dark-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   position: fixed;
@@ -69,13 +88,13 @@ header .container {
 }
 
 .schedule:hover {
-  background-color: #ba181b;
+  background-color: var(--main-red-color);
 }
 
 /* Main */
 
 main {
-  background-color: #0b090a;
+  background-color: var(--main-dark-color);
 }
 
 main .container {
@@ -91,28 +110,28 @@ main .container {
 
 .text-area h1 {
   font-weight: 700;
-  font-size: 50px;
+  font-size: var(--4xl);
   color: #fff;
   margin-top: 50px;
 }
 
 .text-area p {
-  color: #f5f3f4;
+  color: var(--light-grey-color);
   letter-spacing: 2px;
   margin-top: 30px;
-  font-size: 14px;
+  font-size: var(--md);
 }
 
 .whatsapp {
   width: fit-content;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding: 10px 20px;
+  padding: 10px var(--md);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background-color: #ba181b;
+  background-color: var(--main-red-color);
   transition: background-color 300ms ease-in-out;
 }
 
@@ -141,24 +160,26 @@ main .container {
   margin-top: 96px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--sm);
   margin-bottom: 48px;
 }
 
 .default-sec--text span {
   color: #e5383b;
   text-transform: uppercase;
+  font-size: var(--sm);
+  font-weight: bold;
 }
 
 .default-sec--text h2 {
-  color: #0b090a;
-  font-size: 44px;
+  color: var(--main-dark-color);
+  font-size: var(--3xl);
 }
 
 .default-sec--text div {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--md);
 }
 
 .services .default-sec--content {
@@ -175,7 +196,6 @@ main .container {
 .default-sec--item {
   width: 380px;
   min-width: 200px;
-  max-height: 480px;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 #888;
   position: relative;
@@ -183,45 +203,50 @@ main .container {
 
 .default-sec--item img {
   width: 100%;
+  border-top-right-radius: 10px;
 }
 
 .item--text {
   width: 100%;
+  height: auto;
   padding: 32px;
-}
-
-.item--text div {
-  margin-bottom: 8px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  font-size: 18px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .default-sec--item strong {
-  background-color: #ba181b;
-  height: 60px;
-  width: 60px;
-  padding: 5px;
+  background-color: var(--main-red-color);
+  height: 64px;
+  width: 64px;
+  padding: 8px;
   border-radius: 50%;
   display: flex;
   text-align: center;
   align-items: center;
   color: #fff;
   position: absolute;
-  left: -20px;
-  top: -20px;
+  left: -30px;
+  top: -30px;
 }
 
+.item--text h3 {
+  font-size: 24px;
+}
 .item--text p {
-  font-size: 15px;
+  font-size: var(--sm);
+  color: var(--light-dark-color);
 }
 
 /* Local Section */
 
 .local {
-  background-color: #f5f3f4;
+  background-color: var(--light-grey-color);
+}
+
+.local .default-sec--text adress {
+  color: var(--light-dark-color);
+  font-size: var(--md);
 }
 
 .local .default-sec--content {
@@ -242,7 +267,7 @@ main .container {
 /* Footer */
 
 footer {
-  background-color: #161a1d;
+  background-color: var(--light-dark-color);
 }
 
 footer .container {
@@ -256,7 +281,7 @@ footer .container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: #fff;
+  color: var(--light-grey-color);
 }
 
 .footer--text img {
@@ -275,18 +300,16 @@ footer .container {
 }
 
 @media (max-width: 1024px) {
-  .btn {
-    font-size: 14px;
-  }
-  .text-area h1 {
-    font-size: 40px;
-  }
-
-  .default-sec--text h2 {
-    font-size: 35px;
-  }
-  .default-sec--text span {
-    font-size: 15px;
+  html {
+    --xs: 14px;
+    --sm: 17px;
+    --md: 20px;
+    --lg: 24px;
+    --xl: 28px;
+    --2xl: 32px;
+    --3xl: 36px;
+    --4xl: 50px;
+    --5xl: 60px;
   }
 }
 
@@ -300,18 +323,13 @@ footer .container {
     flex-direction: column;
     align-items: center;
   }
-  .text-area h1 {
-    font-size: 35px;
-  }
+
   .whatsapp {
     width: 100%;
   }
 
-  .default-sec--text h2 {
-    font-size: 32px;
-  }
-
   .image-area {
+    margin-left: -15px;
     width: 100%;
     justify-content: center;
   }
@@ -319,12 +337,21 @@ footer .container {
   .footer--text img {
     width: 150px;
   }
-  .footer--text {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 480px) {
+  html {
+    --xs: 12px;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 20px;
+    --xl: 24px;
+    --2xl: 28px;
+    --3xl: 32px;
+    --4xl: 44px;
+    --5xl: 56px;
+  }
+
   .schedule span {
     display: none;
   }
@@ -342,19 +369,13 @@ footer .container {
     background-color: #59ce72;
   }
 
-  .default-sec--item strong {
-    width: 50px;
-    height: 50px;
-    font-size: 13px;
-  }
-
   .local--map-image {
     background-position: -300px;
   }
 
   footer .container {
     flex-direction: column;
-    gap: 20px;
+    gap: var(--md);
   }
   .footer--text img {
     width: 100px;
