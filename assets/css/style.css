@@ -189,9 +189,6 @@ main .container {
   font-weight: bold;
 }
 
-.default-sec--text span::selection {
-}
-
 .default-sec--text h2 {
   color: var(--main-dark-color);
   font-size: var(--3xl);
