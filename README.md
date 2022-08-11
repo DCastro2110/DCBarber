@@ -12,20 +12,20 @@ O Projeto consiste em uma landing page para cabeleleiros que desejam um site sim
 
 ## 📷 Layout
 
-### Mobile
+### 📱 Mobile
 
 <div align="center">
   <img src="https://github.com/DCastro2110/assets/blob/master/raw/DCBarber/mobile.gif" width="425px"/>
 </div>
 
-### Desktop
+### 🖥️ Desktop
 
 <div>
   <img src="https://github.com/DCastro2110/assets/blob/master/raw/DCBarber/desktop.gif"/>
 </div>
 
 
-## Tecnologias
+## 🧑‍💻 Tecnologias
 
 ✔️ Javascript
 
@@ -35,14 +35,14 @@ O Projeto consiste em uma landing page para cabeleleiros que desejam um site sim
 
 ## ⚙️ Configurações
 
-### Importando projeto:
+### 🗔 Clonando o projeto:
 
 ```bash
 git clone https://github.com/DCastro2110/DCBarber.git
 cd ./DCBarber
 ```
 
-### Iniciando projeto: 
+### 🚀 Iniciando projeto: 
 
 Basta acessar o arquivo HTML por um navegador
 
