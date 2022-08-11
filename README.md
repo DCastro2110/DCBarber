@@ -10,13 +10,20 @@ Landing page desenvolvida a partir do design proposto pela Maratona Starter da [
 
 O Projeto consiste em uma landing page para cabeleleiros que desejam um site simples, moderno, responsivo e bonito para conseguir atrair seus clientes. 
 
-## Layout - Mobile
+## 📷 Layout
 
-🚀 Em processo
+### Mobile
 
-## Layout Desktop
+<div align="center">
+  <img src="https://github.com/DCastro2110/assets/blob/master/raw/DCBarber/mobile.gif" width="425px"/>
+</div>
 
-🚀 Em processo
+### Desktop
+
+<div>
+  <img src="https://github.com/DCastro2110/assets/blob/master/raw/DCBarber/desktop.gif"/>
+</div>
+
 
 ## Tecnologias
 
@@ -26,7 +33,7 @@ O Projeto consiste em uma landing page para cabeleleiros que desejam um site sim
 
 ✔️ CSS 
 
-## ⚙️ Configuração
+## ⚙️ Configurações
 
 ### Importando projeto:
 
