@@ -27,11 +27,11 @@ O Projeto consiste em uma landing page para cabeleleiros que desejam um site sim
 
 ## 🧑‍💻 Tecnologias
 
-✔️ Javascript
-
 ✔️ HTML
 
 ✔️ CSS 
+  - CSS Variables
+  - CSS Media Queries
 
 ## ⚙️ Configurações
 
