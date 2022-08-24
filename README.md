@@ -15,7 +15,7 @@ O Projeto consiste em uma landing page para cabeleleiros que desejam um site sim
 ### 📱 Mobile
 
 <div align="center">
-  <img src="https://github.com/DCastro2110/assets/blob/master/raw/DCBarber/mobile.gif" width="425px"/>
+  <img src="https://github.com/DCastro2110/assets/blob/master/raw/DCBarber/mobile.gif" width="320px"/>
 </div>
 
 ### 🖥️ Desktop
