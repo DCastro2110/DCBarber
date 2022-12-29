@@ -38,8 +38,8 @@ O Projeto consiste em uma landing page para cabeleleiros que desejam um site sim
 ### 🗔 Clonando o projeto:
 
 ```bash
-git clone https://github.com/DCastro2110/DCBarber.git
-cd ./DCBarber
+git clone https://github.com/DCastro2110/dcbarber.git
+cd ./dcbarber
 ```
 
 ### 🚀 Iniciando projeto: 
